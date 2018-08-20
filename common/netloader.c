@@ -404,6 +404,7 @@ int netloader_activate(void) {
 
 #ifdef __SWITCH__
     socketInitializeDefault();
+
 #endif
 
 #ifdef __WIN32__
@@ -513,6 +514,22 @@ int netloader_loop(menuEntry_s *me) {
 //---------------------------------------------------------------------------------
 
     struct sockaddr_in sa_remote;
+
+// draw ip
+#ifdef __SWITCH__
+    char hostname[128] = {0};
+    char buff[256] = {0};
+
+    nifmInitialize();
+    gethostname(hostname, sizeof(hostname));
+    u32  ip = atoi(hostname);
+    nifmExit();
+
+    DrawText(interuimedium20, 64, 128 + 18, themeCurrent.textColor, textGetString(StrId_NetLoader));
+
+    snprintf(buff, sizeof(buff), textGetString(StrId_NetLoaderActive), ip&0xff, (ip>>8)&0xff, (ip>>16)&0xff, (ip>>24)&0xff, NXLINK_SERVER_PORT);
+	DrawText(interuiregular18, 64, 168 + 18, themeCurrent.textColor, buff);
+#endif
 
 #if PING_ENABLED
     char recvbuf[256];

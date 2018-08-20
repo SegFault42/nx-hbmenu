@@ -693,21 +693,21 @@ const char* const g_strings[StrId_Max][16] =
         ),
     },*/
 
-    /*[StrId_NetLoader] =
+    [StrId_NetLoader] =
     {
-        STR_EN("3dslink NetLoader"),
-        STR_ES("Cargador de programas 3dslink"),
-        STR_DE("3dslink Netzwerk-Loader"),
-        STR_FR("Chargeur de programme 3dslink"),
-        STR_IT("Caricamento programmi 3dslink"),
-        STR_JP("3dslinkネットローダ"),
-        STR_PT("Carregador de programas 3dslink"),
-        STR_NL("3dslink netwerk lader"),
-        STR_KO("3dslink 네트워크 로더"),
-        STR_RU("Загрузчик 3dslink"),
-        STR_ZH("3dslink 网络执行模块"),
-        STR_TW("3dslink 網路執行模組"),
-    },
+        STR_EN("nxlink NetLoader"),
+        STR_ES("Cargador de programas nxlink"),
+        STR_DE("nxlink Netzwerk-Loader"),
+        STR_FR("Chargeur de programme nxlink"),
+        STR_IT("Caricamento programmi nxlink"),
+        STR_JP("nxlinkネットローダ"),
+        STR_PT("Carregador de programas nxlink"),
+        STR_NL("nxlink netwerk lader"),
+        STR_KO("nxlink 네트워크 로더"),
+        STR_RU("Загрузчик nxlink"),
+        STR_ZH("nxlink 网络执行模块"),
+        STR_TW("nxlink 網路執行模組"),
+    },/*
 
     [StrId_NetLoaderUnavailable] =
     {
@@ -749,71 +749,59 @@ const char* const g_strings[StrId_Max][16] =
         STR_KO("오프라인임, 네트워크 대기중…\n\n\n  \xEE\x80\x81 취소")
         STR_ZH("无法连接网络，等待网络连接…\n\n\n  \xEE\x80\x81 取消"),
         STR_TW("當前離線，等待網路連線…\n\n\n  \xEE\x80\x81 取消"),
-    },
+    },*/
 
-    [StrId_NetLoaderActive] =
-    {
-        STR_EN(
-            "Waiting for 3dslink to connect…\n"
-            "IP Addr: %lu.%lu.%lu.%lu, Port: %d\n\n"
-            "  \xEE\x80\x81 Cancel"
-        ),
-        STR_ES(
-            "Esperando a que se conecte 3dslink…\n"
-            "Dir.IP: %lu.%lu.%lu.%lu, Puerto: %d\n\n"
-            "  \xEE\x80\x81 Cancelar"
-        ),
-        STR_DE(
-            "Warte auf Verbindung von 3dslink…\n"
-            "IP Addr: %lu.%lu.%lu.%lu, Port: %d\n\n"
-            "  \xEE\x80\x81 Abbrechen"
-        ),
-        STR_FR(
-            "En attente de la connexion de 3dslink…\n"
-            "Adr. IP : %lu.%lu.%lu.%lu, Port : %d\n\n"
-            "  \xEE\x80\x81 Annuler"
-        ),
-        STR_IT(
-            "In attesa della connessione di 3dslink…\n"
-            "Ind. IP : %lu.%lu.%lu.%lu, Porta : %d\n\n"
-            "  \xEE\x80\x81 Annullare"
-        ),
-        STR_JP(
-            "3dslinkが接続されるのを待っています…\n"
-            "IPアドレス：%lu.%lu.%lu.%lu, ポート番号：%d\n\n"
-            "  \xEE\x80\x81 キャンセル"
-        ),
-        STR_PT(
-            "A aguardar pela conexão do 3dslink…\n"
-            "End. IP: %lu.%lu.%lu.%lu, Porta: %d\n\n"
-            "  \xEE\x80\x81 Cancelar"
-        ),
-        STR_NL(
-            "Wachten op 3dslink verbinding…\n"
-            "IP Addr: %lu.%lu.%lu.%lu, Poort: %d\n\n"
-            "  \xEE\x80\x81 Annuleren"
-        ),
-        STR_KO(
-            "3dslink의 연결을 대기중…\n"
-            "IP 주소: %lu.%lu.%lu.%lu, 포트: %d\n\n"
-            "  \xEE\x80\x81 취소"
-        ),
-        STR_RU(
-            "Ожидание подключения 3dslink…\n"
-            "айпи адрес: %lu.%lu.%lu.%lu, Порт: %d\n\n"
-            "  \xEE\x80\x81 Отмена"
-        ),
-        STR_ZH(
-            "等待 3dslink 连接…\n"
-            "IP 地址：%lu.%lu.%lu.%lu，端口：%d\n\n"
-            "  \xEE\x80\x81 取消等待"
-        ),
-        STR_TW(
-            "等待 3dslink 連接…\n"
-            "IP 位址：%lu.%lu.%lu.%lu，連接埠：%d\n\n"
-            "  \xEE\x80\x81 取消等待"
-        ),
-    },
+	[StrId_NetLoaderActive] =
+	{
+		STR_EN(
+			"Waiting for 3dslink to connect…\n"
+			"IP Addr: %lu.%lu.%lu.%lu, Port: %d\n\n"
+		),
+		STR_ES(
+			"Esperando a que se conecte 3dslink…\n"
+			"Dir.IP: %lu.%lu.%lu.%lu, Puerto: %d\n\n"
+		),
+		STR_DE(
+			"Warte auf Verbindung von 3dslink…\n"
+			"IP Addr: %lu.%lu.%lu.%lu, Port: %d\n\n"
+		),
+		STR_FR(
+			"En attente de la connexion de 3dslink…\n"
+			"Adr. IP : %lu.%lu.%lu.%lu, Port : %d\n\n"
+		),
+		STR_IT(
+			"In attesa della connessione di 3dslink…\n"
+			"Ind. IP : %lu.%lu.%lu.%lu, Porta : %d\n\n"
+		),
+		STR_JP(
+			"3dslinkが接続されるのを待っています…\n"
+			"IPアドレス：%lu.%lu.%lu.%lu, ポート番号：%d\n\n"
+		),
+		STR_PT(
+			"A aguardar pela conexão do 3dslink…\n"
+			"End. IP: %lu.%lu.%lu.%lu, Porta: %d\n\n"
+		),
+		STR_NL(
+			"Wachten op 3dslink verbinding…\n"
+			"IP Addr: %lu.%lu.%lu.%lu, Poort: %d\n\n"
+		),
+		STR_KO(
+			"3dslink의 연결을 대기중…\n"
+			"IP 주소: %lu.%lu.%lu.%lu, 포트: %d\n\n"
+		),
+		STR_RU(
+			"Ожидание подключения 3dslink…\n"
+			"айпи адрес: %lu.%lu.%lu.%lu, Порт: %d\n\n"
+		),
+		STR_ZH(
+			"等待 3dslink 连接…\n"
+			"IP 地址：%lu.%lu.%lu.%lu，端口：%d\n\n"
+		),
+		STR_TW(
+			"等待 3dslink 連接…\n"
+			"IP 位址：%lu.%lu.%lu.%lu，連接埠：%d\n\n"
+		),
+	},/*
 
     [StrId_NetLoaderTransferring] =
     {
